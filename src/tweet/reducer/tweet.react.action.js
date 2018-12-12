@@ -79,7 +79,7 @@ const addTweet = (tweetText) => {
             body: {
                 "tweet": {
                     "text": tweetText,
-                    "user": "5c0ec54400cbc62ab89ceb3a"
+                    "user": getState().auth.user.id
                 }
             },
         })
