@@ -1,0 +1,32 @@
+<Sidebar.Pushable as={Segment}>
+          <Sidebar
+            as={Menu}
+            animation='slide along'
+            icon='labeled'
+            inverted
+            onHide={this.handleSidebarHide}
+            vertical
+            visible={visible}
+            width='thin'
+          >
+            <Menu.Item as='a'>
+              <Icon name='feed' />
+              Tweet
+            </Menu.Item>
+            <Menu.Item as='a'>
+              <Icon name='search' />
+              Tweet Search
+            </Menu.Item>
+            <Menu.Item as='a'>
+              <Icon name='log out' />
+              Logout
+            </Menu.Item>
+          </Sidebar>
+
+          <Sidebar.Pusher>
+            <Segment basic>
+              <Header as='h3'>Application Content</Header>
+              <Image src='/images/wireframe/paragraph.png' />
+            </Segment>
+          </Sidebar.Pusher>
+        </Sidebar.Pushable>
