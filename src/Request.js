@@ -11,7 +11,7 @@ class Request {
     };
 
     static setDefaults() {
-        axios.defaults.baseURL = "http://localhost:3000";
+        axios.defaults.baseURL = "http://project.quodeck.com";
         axios.defaults.timeout = 120000; // This is optimal for all API requests
         axios.defaults.maxRedirects = 5;
         axios.defaults.transformRequest = [
@@ -186,7 +186,7 @@ class Request {
             ) {
                 baseURL = domain;
             } else {
-                baseURL = "http://localhost:3000";
+                baseURL = "http://project.quodeck.com";
             }
         }
         axios.defaults.baseURL = baseURL;
